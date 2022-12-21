@@ -7,11 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="serving-web-content-complete" />
+        <module name="serving-web-content" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="17" />
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="serving-web-content" options="-parameters" />
       <module name="serving-web-content-complete" options="-parameters" />
     </option>
   </component>
